@@ -1,0 +1,76 @@
+/* === Dandadan Futuristic Theme === */
+.senior-dashboard {
+  min-height: 100vh;
+  background: radial-gradient(circle at bottom right, #1e18d9, #13121a 70%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+/* header */
+.dashboard-header h1 {
+  font-size: 3rem;
+  color: #6cd9ba;
+  text-shadow: 0 0 20px rgba(108, 217, 186, 0.8);
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  font-size: 1.2rem;
+  color: #b775bf;
+  margin-bottom: 40px;
+}
+
+/* cards */
+.card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(63, 40, 141, 0.7);
+}
+
+.dashboard-card h3 {
+  color: #6cd9ba;
+  margin-bottom: 10px;
+}
+
+.dashboard-card p {
+  color: #b775bf;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* button */
+.dashboard-card button {
+  background: linear-gradient(90deg, #3f289d, #1e18d9);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card button:hover {
+  background: linear-gradient(90deg, #6cd9ba, #3f289d);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(108, 217, 186, 0.6);
+}
