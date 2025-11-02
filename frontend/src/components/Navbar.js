@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const navigate = useNavigate();
+
+  const handleJoinClick = () => {
+    navigate("/register");
+  };
+
   return (
     <nav className="navbar">
       <div className="logo">Campus Connect</div>
@@ -14,7 +20,6 @@ function Navbar() {
         <li>
           <Link to="/register">Register</Link>
         </li>
-
         <li>
           <Link to="/forum">Forum</Link>
         </li>
@@ -23,7 +28,9 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className="join-btn">Join Now</button>
+      <button className="join-btn" onClick={handleJoinClick}>
+        Join Now
+      </button>
     </nav>
   );
 }
